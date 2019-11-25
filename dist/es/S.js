@@ -167,7 +167,7 @@ var DataNode = /** @class */ (function () {
     function DataNode(value) {
         this.value = value;
         this.pending = NOTPENDING;
-        this.log = null;
+        this.log = new Log();
     }
     DataNode.prototype.current = function () {
         if (Listener !== null) {
